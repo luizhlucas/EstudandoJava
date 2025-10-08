@@ -10,6 +10,21 @@ public class StatusVeiculos extends Veiculo{
         setDisponivel(true);
     }
 
+    public String Alugar(){
+        if (disponivel){
+            setDisponivel(false);
+            return "Veículo alugado com sucesso!";
+        }
+        return "Erro! O veículo ja foi alugado.";
+    }
+    public String Devolver(){
+        if (disponivel){
+            return "Erro! o veículo ja foi devolivdo.";
+        }
+        setDisponivel(true);
+        return "Véiculo devolvido com sucesso!";
+    }
+
     @Override
     public String toString() {
             String status = disponivel ? "Disponível" : "Indisponível";

@@ -7,5 +7,10 @@ public class Main {
         listaVeiculos[2] = new StatusVeiculos("Civic", "Honda", TipoCombustivel.ALCOOL, 3000.00);
 
         System.out.println(listaVeiculos[0]);
+
+        System.out.println(listaVeiculos[0].Alugar());
+        System.out.println(listaVeiculos[0].Alugar());
+        System.out.println(listaVeiculos[0].Devolver());
+        System.out.println(listaVeiculos[0].Alugar());
     }
 }
